@@ -23,18 +23,30 @@
             <div class = "tab_content_box">
                 <!-- Home Tab -->
                 <img id="my_avatar" src="images/my_avatar.jpg" alt="Avatar">
+                <div id="my_pic"></div>
                 <h2 class="header">Hi, I'm Mirna!</h2>
-                <p>I graduated from Northeastern Illinois University in August 2020 with a B.S. in Computer Science and a minor in Applied Mathematics. I enjoy building (& breaking) things and solving complex problems.</p>
-                <p>Through my academic work, my research experience, and my own time, I've learned & worked with Java, Python, HTML/CSS, and SQL.</p>
+                <p>I graduated from Northeastern Illinois University in August 2020 with a <span id="keyword">B.S.</span> in <span id="keyword">Computer Science</span> and a minor in <span id="keyword">Applied Mathematics</span>. I enjoy building (& breaking) things and solving complex problems.</p>
+                <p>Through my academic work, my research experience, and my own time, I've learned & worked with <span id="keyword">Java</span>, <span id="keyword">Python</span>, <span id="keyword">HTML/CSS</span>, and <span id="keyword">SQL</span>.</p>
                 <p>Aside from coding, I invest my time in lifting weights, drawing, reading, and hanging out with my dog.</p>
             </div>
             <input type="radio" id= "tab2" name="1">
             <div class = "tab_content_box">
                 <!-- Projects Tab -->
-                <h2 class="header">Latest Projects <br><span id="subheader">Hover for details...</span></h2>
+                <h2 class="header">Latest Projects <br></h2>
+                <p class = "subheader">Hover for details...</p>
                 <ul class="grid">
                     <li>
                         <div class = "box image1">
+                            <a href="https://github.com/mirna-salem/Workout-Tracker" title="View the source code on GitHub">
+                                <div class="box-info">
+                                    <h3>Workout Tracker</h3>
+                                    <p>A JavaFx/Java application for tracking workouts.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "box image2">
                             <a href="https://github.com/mirna-salem/Baseline-Model" title="View the source code on GitHub">
                                 <div class="box-info">
                                     <h3>Baseline Model</h3>
@@ -45,22 +57,12 @@
                         </div>
                     </li>
                     <li>
-                        <div class = "box image2">
+                        <div class = "box image3">
                             <a href="https://github.com/mirna-salem/Item-based-Collaborative-Filtering" title="View the source code on GitHub">
                                 <div class="box-info">
                                     <h3>Item-based Collaborative Filtering</h3>
                                     <p>Implements item-based collaborative filtering by computing similarities of movie ratings
                                         to predict the movie preference of a specific user.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class = "box image3">
-                            <a href="https://github.com/mirna-salem/Calculating-Similarity" title="View the source code on GitHub">
-                                <div class="box-info">
-                                    <h3>Natural Language Processing</h3>
-                                    <p>Uses NLTK library to tokenize sentences and create bag of words. The goal was to find cosine similarity between two different text documents.</p>
                                 </div>
                             </a>
                         </div>
@@ -93,5 +95,6 @@
     <footer class="footer">
         &copy; Mirna Salem 2020
     </footer>
+    <script src="myScript.js"></script>
 </body>
 </html>

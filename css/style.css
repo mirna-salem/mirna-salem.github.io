@@ -84,19 +84,27 @@ body {
 }
 .tab_content_box:nth-of-type(1) p {
   margin-left: 230px;
+  letter-spacing: .8px;
+}
+
+#keyword {
+  color: darkorchid;
+  font-weight: bolder;
 }
 .tab_content_box:nth-of-type(1) h2 {
   position: relative;
 }
 #my_avatar{
-  box-shadow: 0 0 25px gray;
   float: left;
-  opacity: .75;
+  opacity: .90;
   position: absolute;
   margin-top: 92px;
   margin-left: 20px;
-  border: 0.5px solid rgb(231, 87, 231);
-  border-radius: 30px;
+  object-fit: cover;
+  border-radius:50%;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-40deg);
 }
 
 .tab_content_box:nth-of-type(2){
@@ -112,12 +120,28 @@ body {
   width: 100%; 
   text-transform: uppercase;
   color: #454545;
-  background: rgba(142, 97, 255, 0.1)
+  margin-bottom: 0;
+  background: rgba(142, 97, 255, 0.1);
 }
 
-#subheader {
-  font-size: 15px;
-  padding: 40px;
+.subheader {
+  font-size: 14px; 
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 0.2em 5em; 
+  width: 100%; 
+  text-transform: uppercase;
+  color: #616161;
+  text-shadow: #e0e0e0 1px 1px 0;
+}
+
+span.random {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+span.random.fade {
+  opacity: 1;
 }
 
 .grid {
@@ -177,18 +201,19 @@ body {
 }
 .image1 {
   background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.10)),
-  url(../images/rating.jpg);
+  url(../images/deadlift.jpg);
   background-size: cover;
+  background-position-y: 50%;
 }
 .image2 {
   background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.10)),
-  url(../images/item-based.jpg);
+  url(../images/rating.jpg);
   background-size: cover;
   background-position-y: 70%;
 }
 .image3 {
   background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.10)),
-  url(../images/bag_of_words.jpg);
+  url(../images/item-based.jpg);
   background-size: cover;
   background-position-y: 55%;
 }
