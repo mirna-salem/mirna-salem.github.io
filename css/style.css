@@ -25,6 +25,10 @@ body {
   opacity: 0.90;
 }
 
+#aboutMe {
+  text-align: center;
+  padding: 0 100px;
+}
 .tab ul {
   margin: 0;
   padding: 0;
@@ -83,29 +87,17 @@ body {
   float: left;
 }
 .tab_content_box:nth-of-type(1) p {
-  margin-left: 230px;
   letter-spacing: .8px;
 }
 
-#keyword {
+.keyword {
   color: darkorchid;
   font-weight: bolder;
 }
 .tab_content_box:nth-of-type(1) h2 {
   position: relative;
 }
-#my_avatar{
-  float: left;
-  opacity: .90;
-  position: absolute;
-  margin-top: 92px;
-  margin-left: 20px;
-  object-fit: cover;
-  border-radius:50%;
-  width: 150px;
-  height: 150px;
-  transform: rotate(-40deg);
-}
+
 
 .tab_content_box:nth-of-type(2){
   background: #eed6e5;
@@ -275,13 +267,4 @@ span.random.fade {
 }
 tab_content_box h2{
   margin: 0 0 20px;
-}
-.footer {
-  color: rgb(97, 97, 97);
-  text-align: center;
-  bottom: 0%;
-  width: 100%;
-  position: relative;
-  float: left;
-  padding: 25px;
 }
